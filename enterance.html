@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+        <style>
+          body{
+            background-color:#658864 ;
+            font-family: "Trirong", serif;
+          }
+          h1{
+            
+            color:#FFD4D4;
+            margin-left: 120px;
+            font-weight:bold;
+            letter-spacing: 3px;
+            font-size: 70px;
+          }
+          div{
+            height:400px;
+            width:800px;
+            background-color: #555555;
+            margin:150px auto;
+            box-shadow: 5px 5px,-5px -5px;
+          }
+          .name{
+            margin-left:275px;
+            position: relative;
+            bottom: 70px;
+            
+          }
+          #login{
+            height:50px;
+            width:150px;
+            background-color:  #734b6d;
+            
+            margin-bottom: 10px;
+            position: relative;
+            bottom:40px;
+            left:50px;
+            
+          }
+          a{
+            text-decoration: none;
+            font-family: "Trirong", serif;
+            color: aliceblue;
+            font-size: 20px;
+            letter-spacing: 3px;
+
+          }
+          #register{
+            height:50px;
+            width:150px;
+            background-color:  #734b6d;
+            
+            margin-bottom: 10px;
+            position: relative;
+            bottom:40px;
+            left:430px;
+            
+          }
+
+          
+        </style>
+    </head>
+    <body>
+        <div >
+           <h1 class="welcome">WELCOME TO</h1>
+           <h1 class="name">ASOP</h1>
+           <button id="login"><a href="login.html">Login</a></button>
+           <button id="register"><a href="reg.html">Register</a></button>
+        </div>
+        <script>
+          document.getElementById("login").addEventListener("mouseover",function(){
+            document.getElementById("login").style.borderRadius="50px";
+          });
+          document.getElementById("login").addEventListener("mouseout",function(){
+            document.getElementById("login").style.borderRadius="0px";
+          });
+          document.getElementById("register").addEventListener("mouseover",function(){
+            document.getElementById("register").style.borderRadius="50px";
+          });
+          document.getElementById("register").addEventListener("mouseout",function(){
+            document.getElementById("register").style.borderRadius="0px";
+          });
+          
+        </script>
+    </body>
+</html>
